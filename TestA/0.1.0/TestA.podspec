@@ -29,8 +29,9 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'TestA/Classes/**/*'
+  #s.swift_version = '4.1'
+  s.dependency 'JJBasicGenericModule'
+  #s.dependency 'JJBasicServiceModule'
   
   # s.resource_bundles = {
   #   'TestA' => ['TestA/Assets/*.png']
@@ -39,4 +40,13 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+
+ # engines
+  #s.subspec 'Tool' do |enginest|
+  #  enginest.public_header_files = 'TestA/Classes/Tool/*.h'
+  #  enginest.source_files = 'TestA/Classes/Tool/*.{h,m}'
+    #enginest.dependency 'JJSwiftPrivateModule'
+  #  enginest.dependency 'JJBasicGenericModule'
+  #  enginest.dependency 'JJBasicServiceModule'
+  #end
 end
